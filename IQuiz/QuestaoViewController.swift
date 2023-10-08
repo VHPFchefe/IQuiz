@@ -11,11 +11,18 @@ class QuestaoViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.hidesBackButton = true
+        configurarLayout()
         
     }
     
 
+    func configurarLayout(){
+        navigationItem.hidesBackButton = true
+        for botao in botoesRespostas{
+            botao.layer.cornerRadius = 12.0
+        }
+    }
+    
     @IBOutlet var TituloDaQuestao: [UILabel]!
     
     
@@ -23,6 +30,6 @@ class QuestaoViewController: UIViewController {
         
     }
     
+    @IBOutlet var botoesRespostas: [UIButton]!
     
-
 }
