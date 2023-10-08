@@ -13,6 +13,7 @@
 		E6A2EF862AD33FEF007FD142 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6A2EF842AD33FEF007FD142 /* Main.storyboard */; };
 		E6A2EF882AD33FF3007FD142 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6A2EF872AD33FF3007FD142 /* Assets.xcassets */; };
 		E6A2EF8B2AD33FF3007FD142 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6A2EF892AD33FF3007FD142 /* LaunchScreen.storyboard */; };
+		E6A2EF942AD35043007FD142 /* QuestaoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A2EF932AD35043007FD142 /* QuestaoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		E6A2EF872AD33FF3007FD142 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E6A2EF8A2AD33FF3007FD142 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E6A2EF8C2AD33FF3007FD142 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6A2EF932AD35043007FD142 /* QuestaoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestaoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,24 @@
 		E6A2EF7D2AD33FEF007FD142 /* IQuiz */ = {
 			isa = PBXGroup;
 			children = (
+				E6A2EF922AD34FFE007FD142 /* New Group */,
 				E6A2EF7E2AD33FEF007FD142 /* AppDelegate.swift */,
 				E6A2EF802AD33FEF007FD142 /* SceneDelegate.swift */,
 				E6A2EF822AD33FEF007FD142 /* ViewController.swift */,
+				E6A2EF932AD35043007FD142 /* QuestaoViewController.swift */,
 				E6A2EF842AD33FEF007FD142 /* Main.storyboard */,
 				E6A2EF872AD33FF3007FD142 /* Assets.xcassets */,
 				E6A2EF892AD33FF3007FD142 /* LaunchScreen.storyboard */,
 				E6A2EF8C2AD33FF3007FD142 /* Info.plist */,
 			);
 			path = IQuiz;
+			sourceTree = "<group>";
+		};
+		E6A2EF922AD34FFE007FD142 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +152,7 @@
 				E6A2EF832AD33FEF007FD142 /* ViewController.swift in Sources */,
 				E6A2EF7F2AD33FEF007FD142 /* AppDelegate.swift in Sources */,
 				E6A2EF812AD33FEF007FD142 /* SceneDelegate.swift in Sources */,
+				E6A2EF942AD35043007FD142 /* QuestaoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
