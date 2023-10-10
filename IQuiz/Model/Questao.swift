@@ -1,10 +1,3 @@
-//
-//  Questao.swift
-//  IQuiz
-//
-//  Created by Vinicius Floriano on 09/10/23.
-//
-
 import Foundation
 
 struct Questao {

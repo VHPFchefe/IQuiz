@@ -26,8 +26,11 @@ class QuestaoViewController: UIViewController {
             botao.setTitle(tituloBotao, for: .normal)
             botao.backgroundColor =  UIColor(red: 116/255, green: 50/255, blue: 255/255, alpha: 1.0)
         }
-        
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let desempenhoVC = segue.destination as? DesempenhoViewController else { return }
+        desempenhoVC.pontuacao = pontuacao    }
     
     func configurarLayout(){
         navigationItem.hidesBackButton = true
@@ -37,8 +40,6 @@ class QuestaoViewController: UIViewController {
         tituloQuestao.numberOfLines = 0
         tituloQuestao.textAlignment = .center
     }
-    
-
     
     @IBAction func respostaBotaoPressionado(_ sender: UIButton) {
         let usuarioAcertouResposta = questoes[numeroQuestao].respostaCorreta == sender.tag
@@ -53,7 +54,13 @@ class QuestaoViewController: UIViewController {
         if(numeroQuestao < questoes.count-1){
             numeroQuestao += 1
             Timer.scheduledTimer(timeInterval: 0.75, target: self, selector: #selector(configurarQuestao), userInfo: 1000 , repeats: false)
+        }else{
+            navegaTelaDesempenho()
         }
+    }
+    
+    func navegaTelaDesempenho(){
+        performSegue(withIdentifier: "IrParaTelaDesempenho", sender: nil)
     }
     
 
