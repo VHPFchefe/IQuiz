@@ -72,7 +72,7 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O0V-nR-iKz">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O0V-nR-iKz">
                                 <rect key="frame" x="64" y="328" width="265" height="62"/>
                                 <color key="backgroundColor" red="0.45490196078431372" green="0.19607843137254902" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -90,7 +90,7 @@
                                     <action selector="respostaBotaoPressionado:" destination="KJa-Sd-jOI" eventType="touchUpInside" id="y3l-U4-5Qu"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s9l-Og-Ouz">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s9l-Og-Ouz">
                                 <rect key="frame" x="64" y="516" width="265" height="62"/>
                                 <color key="backgroundColor" red="0.4549019608" green="0.1960784314" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -108,7 +108,7 @@
                                     <action selector="respostaBotaoPressionado:" destination="KJa-Sd-jOI" eventType="touchUpInside" id="8fV-vn-n2W"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gGV-A2-zsw">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gGV-A2-zsw">
                                 <rect key="frame" x="64" y="422" width="265" height="62"/>
                                 <color key="backgroundColor" red="0.4549019608" green="0.1960784314" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -146,7 +146,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="6IC-Mt-gz7"/>
                     <connections>
-                        <outletCollection property="TituloDaQuestao" destination="PMt-yk-Up5" collectionClass="NSMutableArray" id="nTb-IZ-WL3"/>
+                        <outlet property="tituloQuestao" destination="PMt-yk-Up5" id="r8U-Gm-Xye"/>
                         <outletCollection property="botoesRespostas" destination="gGV-A2-zsw" collectionClass="NSMutableArray" id="Opn-ub-6fw"/>
                         <outletCollection property="botoesRespostas" destination="O0V-nR-iKz" collectionClass="NSMutableArray" id="56Q-0O-G9s"/>
                         <outletCollection property="botoesRespostas" destination="s9l-Og-Ouz" collectionClass="NSMutableArray" id="bRV-ie-pWQ"/>
